@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apollo | home</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- 3 linhas para importar a font do fonts.google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/font/fontawesome/css/all.css"> <!-- importa as fonts do fontawesome-->
+</head>
+<body>
+    <header class="cabecalho">
+        <button class="cabecalho__menu" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+        <img src="assets/img/logo2.png" alt="logotipo da pizzaria" class="cabecalho__logo">
+        <button class="cabecalho__notificacao" aria-label="Carrinho"><i class="fa-solid fa-cart-shopping"></i></button>
+    </header>
+
+<nav class="menu-lateral"> <!--Por padrao vem escondido. mas quando no botao, acrescenta o .menu-lateral--ativo e muda o css, aparecendo--> 
+    <img src="assets/img/logo2.png" alt="logotipo da pizzaria" class="menu-lateral__logo">
+    <a href="#" class="menu-lateral__link menu-lateral__link--atual" ><i class="fa-solid fa-house"></i> Início</a>
+    <a href="#" class="menu-lateral__link"><i class="fa-solid fa-clipboard-list"></i></i> Cardápio</a>
+    <a href="#" class="menu-lateral__link"><i class="fa-solid fa-calendar-days"></i> Reservas</a>
+    <a href="#" class="menu-lateral__link"><i class="fa-solid fa-store"></i> Sobre a Pizzaria</a>
+    <a href="#" class="menu-lateral__link"><i class="fa-solid fa-phone"></i>Contato</a>
+</nav>
+<script src="index.js"></script>
+
+</body>
+</html>
