@@ -87,24 +87,44 @@ body {
 .principal {
     padding: 24px 16px;
 }
-.titulo-pagina {
-    font-family:Apple Chancery, cursive ;
-    font-size: 26px;
-    color: #FFFFFF;
-}
+
 .titulo-promocao {
     font-family:Apple Chancery, cursive ;
     font-size: 24px;
     color: #FFFFFF;
 }
 .cartao {
-    width: 100%;
     border-radius: 15px;
     overflow: hidden; /*esconde qualquer coisa que ultrapasse a borda esconde*/
     background-color: #e4fee4;
-
+    padding: 8px;
+    display: grid;
+    grid-template-columns: 150px 1fr; /*tamanho das colunas*/
+    gap: 8px; /*deixa um espaço entre os elementos*/
+    margin:16px 0px
 }
-
-.cartao__conteudo {
-    padding: 16px;
+ 
+.cartao__imagem {
+    height: 125px;
+    width: 150px;
+    grid-row: span 4; /*row e column span*/
+    border-radius: 5px;
+}
+ 
+.cartao__sabor {
+    font-size: 22px;
+    font-weight: bold;
+    justify-self: center;
+}
+ 
+.cartao__precoNovo {
+    font-size: 18px;
+    font-weight: bold;
+}
+ 
+.cartao__botao {
+    background-color: #408a0b;
+    border-radius: 25px;
+    padding: 8px 15px;
+    font-weight: bold;
 }
